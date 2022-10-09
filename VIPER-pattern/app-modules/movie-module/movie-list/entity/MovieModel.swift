@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 private let ID = "id"
-private let TITLE = "author"
-private let BRIEF = "title"
-private let IMAGESOURCE = "urlToImage"
+private let TITLE = "original_title"
+private let BRIEF = "overview"
+private let IMAGESOURCE = "backdrop_path"
 
 class MovieModel:Mappable{
     

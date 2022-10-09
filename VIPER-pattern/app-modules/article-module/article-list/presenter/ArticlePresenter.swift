@@ -17,8 +17,8 @@ class ArticlePresenter:ViewToPresenterProtocol {
     
     var router: PresenterToRouterProtocol?
     
-    func startFetchingArticle() {
-        interactor?.fetchArticle()
+    func startFetchingArticle(category:String) {
+        interactor?.fetchArticle(category: category)
     }
     
     func showDetilArticleController(navigationController: UINavigationController, detilArticleModel:ArticleModel) {
