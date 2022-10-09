@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         /* Create ui-view-controller instance*/
-        let article = ArticleRouter.createModule()
+        let article = DashboardRouter.createDashboardModule()
+//        let article = MovieRouter.createMovieModule()
 
         /* Initiating instance of ui-navigation-controller with view-controller */
         let navigationController = UINavigationController()

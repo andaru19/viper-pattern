@@ -28,7 +28,10 @@ class MovieViewController: UIViewController {
         myTableView.dataSource = self
 
     }
-
+    @IBAction func backButton(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension MovieViewController:PresenterToViewMovieProtocol{
@@ -65,7 +68,7 @@ extension MovieViewController:UITableViewDelegate, UITableViewDataSource{
         cell.mDescription.text = arrayList[indexPath.row].brief
 
         // this things should be done in interactor where the business logid is done and should be send back to viewController
-        Alamofire.request(self.arrayList[indexPath.row].imagesource!).responseData { (response) in
+        Alamofire.request("https://image.tmdb.org/t/p/original" + self.arrayList[indexPath.row].imagesource!).responseData { (response) in
             if response.error == nil {
                 print(response.result)
                                 if let data = response.data {

@@ -10,8 +10,8 @@ import Foundation
 import ObjectMapper
 
 private let ID = "id"
-private let TITLE = "author"
-private let BRIEF = "title"
+private let TITLE = "title"
+private let BRIEF = "author"
 private let CONTENT = "content"
 private let URL = "url"
 private let FILESOURCE = "urlToImage"

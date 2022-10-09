@@ -14,7 +14,7 @@ protocol ViewToPresenterProtocol: class{
     var view: PresenterToViewProtocol? {get set}
     var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
-    func startFetchingArticle()
+    func startFetchingArticle(category:String)
     func showDetilArticleController(navigationController:UINavigationController, detilArticleModel:ArticleModel)
 
 }
@@ -31,7 +31,7 @@ protocol PresenterToRouterProtocol: class {
 
 protocol PresenterToInteractorProtocol: class {
     var presenter:InteractorToPresenterProtocol? {get set}
-    func fetchArticle()
+    func fetchArticle(category:String)
 }
 
 protocol InteractorToPresenterProtocol: class {

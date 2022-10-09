@@ -11,10 +11,12 @@ import Alamofire
 import ObjectMapper
 
 class ArticleInteractor: PresenterToInteractorProtocol{
+    
+    
     var presenter: InteractorToPresenterProtocol?
     
-    func fetchArticle() {
-        Alamofire.request(API_BASE_ARTICLE_LIST + "All" + API_ARTICLE_LIST).responseJSON { response in
+    func fetchArticle(category:String) {
+        Alamofire.request(API_BASE_ARTICLE_LIST + category + API_ARTICLE_LIST).responseJSON { response in
             
             if(response.response?.statusCode == 200){
                 if let json = response.result.value as AnyObject? {

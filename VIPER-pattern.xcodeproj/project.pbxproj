@@ -18,6 +18,11 @@
 		94CBE45E28F2E2650061EA77 /* WebViewArticleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE45D28F2E2650061EA77 /* WebViewArticleRouter.swift */; };
 		94CBE46028F2E35A0061EA77 /* WebViewArticleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE45F28F2E35A0061EA77 /* WebViewArticleInteractor.swift */; };
 		94CBE46228F2E3C10061EA77 /* WebViewArticleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE46128F2E3C10061EA77 /* WebViewArticleProtocols.swift */; };
+		94CBE46E28F36D430061EA77 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE46D28F36D430061EA77 /* DashboardViewController.swift */; };
+		94CBE47028F36EB10061EA77 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE46F28F36EB10061EA77 /* DashboardPresenter.swift */; };
+		94CBE47228F36F4A0061EA77 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE47128F36F4A0061EA77 /* DashboardRouter.swift */; };
+		94CBE47428F370140061EA77 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE47328F370140061EA77 /* DashboardInteractor.swift */; };
+		94CBE47628F370850061EA77 /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBE47528F370850061EA77 /* DashboardProtocols.swift */; };
 		D4A0F17520EA22AF0088F11B /* MovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17420EA22AF0088F11B /* MovieProtocol.swift */; };
 		D4A0F17720EA25620088F11B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17620EA25620088F11B /* MovieModel.swift */; };
 		D4A0F17920EA26C00088F11B /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17820EA26C00088F11B /* MovieViewController.swift */; };
@@ -54,6 +59,11 @@
 		94CBE45D28F2E2650061EA77 /* WebViewArticleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewArticleRouter.swift; sourceTree = "<group>"; };
 		94CBE45F28F2E35A0061EA77 /* WebViewArticleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewArticleInteractor.swift; sourceTree = "<group>"; };
 		94CBE46128F2E3C10061EA77 /* WebViewArticleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewArticleProtocols.swift; sourceTree = "<group>"; };
+		94CBE46D28F36D430061EA77 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		94CBE46F28F36EB10061EA77 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		94CBE47128F36F4A0061EA77 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		94CBE47328F370140061EA77 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		94CBE47528F370850061EA77 /* DashboardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProtocols.swift; sourceTree = "<group>"; };
 		9C8991AEADDD4FCE88BB0405 /* Pods_VIPER_pattern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_pattern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8524BEFDB7BE87E0061D65D /* Pods-VIPER-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER-demo/Pods-VIPER-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A0F17420EA22AF0088F11B /* MovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocol.swift; sourceTree = "<group>"; };
@@ -100,7 +110,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		94CBE43F28F25D160061EA77 /* detil-article-module */ = {
+		94CBE43F28F25D160061EA77 /* detil-article */ = {
 			isa = PBXGroup;
 			children = (
 				94CBE44028F25D380061EA77 /* protocols */,
@@ -110,7 +120,7 @@
 				94CBE44428F2B8D30061EA77 /* presenter */,
 				94CBE44528F2B8E00061EA77 /* view */,
 			);
-			path = "detil-article-module";
+			path = "detil-article";
 			sourceTree = "<group>";
 		};
 		94CBE44028F25D380061EA77 /* protocols */ = {
@@ -161,7 +171,7 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		94CBE45228F2E00D0061EA77 /* webview-article-module */ = {
+		94CBE45228F2E00D0061EA77 /* webview-article */ = {
 			isa = PBXGroup;
 			children = (
 				94CBE45828F2E0760061EA77 /* protocols */,
@@ -171,7 +181,7 @@
 				94CBE45428F2E0520061EA77 /* presenter */,
 				94CBE45328F2E0490061EA77 /* view */,
 			);
-			path = "webview-article-module";
+			path = "webview-article";
 			sourceTree = "<group>";
 		};
 		94CBE45328F2E0490061EA77 /* view */ = {
@@ -221,7 +231,85 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
-		D4A0F16B20EA21C10088F11B /* movie-module */ = {
+		94CBE46328F317500061EA77 /* article-module */ = {
+			isa = PBXGroup;
+			children = (
+				D4D61A3E20E6122A0087F31F /* article-list */,
+				94CBE43F28F25D160061EA77 /* detil-article */,
+				94CBE45228F2E00D0061EA77 /* webview-article */,
+			);
+			path = "article-module";
+			sourceTree = "<group>";
+		};
+		94CBE46428F3178C0061EA77 /* movie-module */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F16B20EA21C10088F11B /* movie-list */,
+			);
+			path = "movie-module";
+			sourceTree = "<group>";
+		};
+		94CBE46528F317BE0061EA77 /* dashboard-module */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE46B28F36CF80061EA77 /* protocols */,
+				94CBE46A28F36CF00061EA77 /* entity */,
+				94CBE46928F36CEA0061EA77 /* interactor */,
+				94CBE46828F36CE10061EA77 /* router */,
+				94CBE46728F36CDA0061EA77 /* presenter */,
+				94CBE46628F36CCF0061EA77 /* view */,
+			);
+			path = "dashboard-module";
+			sourceTree = "<group>";
+		};
+		94CBE46628F36CCF0061EA77 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE46D28F36D430061EA77 /* DashboardViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		94CBE46728F36CDA0061EA77 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE46F28F36EB10061EA77 /* DashboardPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		94CBE46828F36CE10061EA77 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE47128F36F4A0061EA77 /* DashboardRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		94CBE46928F36CEA0061EA77 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE47328F370140061EA77 /* DashboardInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		94CBE46A28F36CF00061EA77 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		94CBE46B28F36CF80061EA77 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				94CBE47528F370850061EA77 /* DashboardProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		D4A0F16B20EA21C10088F11B /* movie-list */ = {
 			isa = PBXGroup;
 			children = (
 				D4A0F17120EA22250088F11B /* view */,
@@ -231,7 +319,7 @@
 				D4A0F16D20EA21EB0088F11B /* entity */,
 				D4A0F16C20EA21DB0088F11B /* protocols */,
 			);
-			path = "movie-module";
+			path = "movie-list";
 			sourceTree = "<group>";
 		};
 		D4A0F16C20EA21DB0088F11B /* protocols */ = {
@@ -323,7 +411,7 @@
 			path = "VIPER-pattern";
 			sourceTree = "<group>";
 		};
-		D4D61A3E20E6122A0087F31F /* article-module */ = {
+		D4D61A3E20E6122A0087F31F /* article-list */ = {
 			isa = PBXGroup;
 			children = (
 				D4D61A4A20E615AA0087F31F /* protocols */,
@@ -333,7 +421,7 @@
 				D4D61A4220E613140087F31F /* presenter */,
 				D4D61A4120E6130E0087F31F /* view */,
 			);
-			path = "article-module";
+			path = "article-list";
 			sourceTree = "<group>";
 		};
 		D4D61A4120E6130E0087F31F /* view */ = {
@@ -380,10 +468,9 @@
 		D4D61A4620E6136C0087F31F /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
-				94CBE45228F2E00D0061EA77 /* webview-article-module */,
-				94CBE43F28F25D160061EA77 /* detil-article-module */,
-				D4D61A3E20E6122A0087F31F /* article-module */,
-				D4A0F16B20EA21C10088F11B /* movie-module */,
+				94CBE46528F317BE0061EA77 /* dashboard-module */,
+				94CBE46328F317500061EA77 /* article-module */,
+				94CBE46428F3178C0061EA77 /* movie-module */,
 			);
 			path = "app-modules";
 			sourceTree = "<group>";
@@ -559,13 +646,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CBE47628F370850061EA77 /* DashboardProtocols.swift in Sources */,
 				94CBE46228F2E3C10061EA77 /* WebViewArticleProtocols.swift in Sources */,
 				94CBE45A28F2E0960061EA77 /* WebViewArticleViewController.swift in Sources */,
 				94CBE44F28F2BFCE0061EA77 /* DetilArticlePresenter.swift in Sources */,
 				D4A0F17D20EA29180088F11B /* MoviePresenter.swift in Sources */,
 				94CBE44928F2BABA0061EA77 /* DetilArticleModel.swift in Sources */,
 				94CBE44D28F2BF030061EA77 /* DetilArticleRouter.swift in Sources */,
+				94CBE47428F370140061EA77 /* DashboardInteractor.swift in Sources */,
 				D4A0F17F20EA2B160088F11B /* MovieInteractor.swift in Sources */,
+				94CBE47228F36F4A0061EA77 /* DashboardRouter.swift in Sources */,
 				D4D61A5620E62B280087F31F /* ArticleRouter.swift in Sources */,
 				D4D61A5220E622C60087F31F /* ArticlePresenter.swift in Sources */,
 				D4A0F17920EA26C00088F11B /* MovieViewController.swift in Sources */,
@@ -574,11 +664,13 @@
 				D4D61A4E20E617650087F31F /* ArticleModel.swift in Sources */,
 				94CBE44728F2B9A00061EA77 /* DetilArticleProtocols.swift in Sources */,
 				D4A0F17B20EA26DB0088F11B /* MovieRouter.swift in Sources */,
+				94CBE46E28F36D430061EA77 /* DashboardViewController.swift in Sources */,
 				D4D61A5420E626020087F31F /* ArticleInteractor.swift in Sources */,
 				D4D61A5020E619530087F31F /* AppConstants.swift in Sources */,
 				D4A0F17520EA22AF0088F11B /* MovieProtocol.swift in Sources */,
 				D4E6799420EB41F300D8700F /* AppUtils.swift in Sources */,
 				D4D61A2F20E611B10087F31F /* ArticleViewController.swift in Sources */,
+				94CBE47028F36EB10061EA77 /* DashboardPresenter.swift in Sources */,
 				D4D61A4C20E615DB0087F31F /* ArticleProtocols.swift in Sources */,
 				D4E6799220EB418500D8700F /* ProgressIndicator.swift in Sources */,
 				94CBE46028F2E35A0061EA77 /* WebViewArticleInteractor.swift in Sources */,
